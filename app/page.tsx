@@ -115,7 +115,7 @@ export default function KnowledgeHubLogin() {
 
       {/* Right Section */}
          <div className="col-12 col-md-5 bg-light d-flex flex-column justify-content-center align-items-center p-4 p-md-5">
-        <img src={logo} alt="Anantya Logo" width="200" /> 
+          {/* <img src={logo} alt="Anantya Logo" width="200" /> */}
         <h4 className="fw-semibold mb-3 text-center">Explore the Knowledge Hub</h4>
 
         <form onSubmit={handleLogin} className="p-4 rounded w-100" style={{ maxWidth: "400px" }}>
