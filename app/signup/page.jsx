@@ -21,8 +21,8 @@ export default function Signup() {
     setSuccessMessage("");
 
     // 1. Validation
-    if (!form.email.endsWith("@anantya.ai")) {
-      setErrorMessage("Only @anantya.ai emails are allowed!");
+    if (!form.email.endsWith("@ringpass")) {
+      setErrorMessage("Only @ringpass emails are allowed!");
       return;
     }
     if (form.password !== form.confirmPassword) {
@@ -89,7 +89,7 @@ export default function Signup() {
           
           <div className="mb-3">
             <label className="form-label small fw-bold text-dark">Company Email</label>
-            <input className="signup-input form-control" type="email" placeholder="name@anantya.ai" required 
+            <input className="signup-input form-control" type="email" placeholder="name@ringpass" required 
               onChange={(e) => setForm({...form, email: e.target.value})} disabled={isSubmitting || !!successMessage} />
           </div>
           
